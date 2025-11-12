@@ -1,0 +1,4 @@
+model,display_name,family,series,size_b,source
+qwen/Qwen2.5-1.5B-Instruct,Qwen2.5-1.5B,Qwen,Qwen2.5,1.5,modelscope
+deepseek-ai/DeepSeek-Coder-1.3B-Instruct,DeepSeek-Coder-1.3B,DeepSeek,DeepSeek-Coder,1.3,modelscope
+qwen/Qwen2.5-3B-Instruct,Qwen2.5-3B,Qwen,Qwen2.5,3,modelscope

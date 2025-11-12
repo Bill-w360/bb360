@@ -1,0 +1,32 @@
+# config.yaml
+score_thresholds:
+  expert: 4.0
+  competent: 3.0
+  developing: 2.0
+
+# 数据集到“维度/领域”的映射（支持通配/正则，视 evaluator 实现）
+benchmark_mapping:
+  # 数学推理
+  "^gsm8k$": math_reasoning
+  # 常识推断
+  "^(Rowan/)?hellaswag$": commonsense
+  # 阅读理解
+  "^(super_glue/)?boolq$": reading_comprehension
+
+  # MMLU 四大分组（你在 scores.csv 里已经有聚合行：mmlu, mmlu_humanities, mmlu_social_sciences, mmlu_stem, mmlu_other）
+  "^mmlu$": general_knowledge
+  "^mmlu_humanities$": humanities
+  "^mmlu_social_sciences$": social_science
+  "^mmlu_stem$": stem
+  "^mmlu_other$": other_knowledge
+
+# 可选：权重（不写就都当 1）
+datasets:
+  gsm8k: 1.0
+  hellaswag: 1.0
+  boolq: 1.0
+  mmlu: 1.0
+  mmlu_humanities: 1.0
+  mmlu_social_sciences: 1.0
+  mmlu_stem: 1.0
+  mmlu_other: 1.0

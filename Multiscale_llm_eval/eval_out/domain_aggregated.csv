@@ -1,0 +1,4 @@
+model,parameters,family,release_date,math_reasoning,commonsense,reading_comprehension,general_knowledge,humanities,social_science,stem,other_knowledge,overall_score
+qwen/Qwen2.5-3B-Instruct,,Qwen,,49.333,52.0,77.0,65.895,74.431,77.448,58.887,66.692,65.211
+deepseek-ai/DeepSeek-Coder-1.3B-Instruct,,DeepSeek,,20.333,36.0,71.0,23.807,25.608,23.646,25.955,21.705,31.007
+qwen/Qwen2.5-1.5B-Instruct,,Qwen,,37.5,47.0,79.0,59.175,67.792,72.594,51.688,58.167,59.114

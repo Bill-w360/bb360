@@ -1,0 +1,58 @@
+# config.yaml
+cap_dims:
+  - name: domain
+    type: categorical   # ['categorical','ordinal','real'] 三选一
+    weight: 1.0
+    values: [math, reading, commonsense, science]   # categorical 维度建议列出全集
+
+  - name: difficulty
+    type: ordinal
+    weight: 1.0
+    order: [easy, medium, hard]                     # ordinal 维度建议给顺序
+
+  - name: reasoning
+    type: real
+    weight: 0.8                                     # 连续值，0.0~1.0
+
+  - name: knowledge
+    type: real
+    weight: 0.8
+
+  - name: cost
+    type: real
+    weight: 0.5
+
+#（如果你只打算用 dim=5，就保持 5 个维度。若要改维度数量，训练脚本用 --from-config 自动推断）
+
+
+
+# 路由权重（越小越好）
+alpha: 1.0 # Wasserstein
+beta: 0.3 # 成本
+gamma: 0.5 # 背压影子价格
+
+
+delta: 0.7 # 标签匹配项的权重（加入 1 - Match）
+
+
+# 成本子项权重
+cost_weights:
+latency_ms: 1.0
+price_token: 0.2
+mem_gb: 0.1
+
+
+# 背压影子价格参数
+backpressure:
+fn: linear # linear | log | sqrt | custom
+k: 0.001
+use_wait_ms: true
+
+
+# 标签匹配器
+label_matcher:
+mode: bilinear # bilinear | semantic
+weights_path: checkpoints/label_matcher_bilinear.json
+semantic:
+task_label_text_tpl: "{domain} task, difficulty {difficulty}"
+model_label_text_tpl: "model is {rank} at {domain}"

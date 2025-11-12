@@ -1,0 +1,14 @@
+task: boolq_local
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    validation: data_local/boolq/validation.jsonl
+output_type: multiple_choice
+validation_split: validation
+doc_to_text: "{{passage}}\nQuestion: {{question}}\nAnswer:"
+doc_to_choice: ["False", "True"]
+doc_to_target: "{{ 1 if label else 0 }}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true

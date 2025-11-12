@@ -1,0 +1,14 @@
+task: hellaswag_local
+dataset_path: json
+dataset_kwargs:
+  data_files:
+    validation: data_local/hellaswag/validation.jsonl
+output_type: multiple_choice
+validation_split: validation
+doc_to_text: "{{ctx}}"
+doc_to_choice: "{{endings}}"
+doc_to_target: "{{label}}"
+metric_list:
+  - metric: acc
+    aggregation: mean
+    higher_is_better: true

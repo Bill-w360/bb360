@@ -1,0 +1,46 @@
+dim_order:
+- math_reasoning
+- commonsense
+- reading_comprehension
+- general_knowledge
+- humanities
+- social_science
+- stem
+- other_knowledge
+models:
+- name: qwen/Qwen2.5-3B-Instruct
+  capability:
+  - 0.49333
+  - 0.52
+  - 0.77
+  - 0.65895
+  - 0.74431
+  - 0.77448
+  - 0.58887
+  - 0.66692
+  cost:
+    tp: 2.0
+- name: deepseek-ai/DeepSeek-Coder-1.3B-Instruct
+  capability:
+  - 0.20333
+  - 0.36
+  - 0.71
+  - 0.23807
+  - 0.25608
+  - 0.23646
+  - 0.25955
+  - 0.21705
+  cost:
+    tp: 1.0
+- name: qwen/Qwen2.5-1.5B-Instruct
+  capability:
+  - 0.375
+  - 0.47
+  - 0.79
+  - 0.59175
+  - 0.67792
+  - 0.72594
+  - 0.51688
+  - 0.58167
+  cost:
+    tp: 1.0

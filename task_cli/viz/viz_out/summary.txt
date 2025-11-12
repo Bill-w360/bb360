@@ -1,0 +1,11 @@
+# Simulation Summary
+t_end: 87009.013986
+Models: 3
+Total served: 87009
+Jain index (served): 1.0000
+Jain index (busy_time): 1.0000
+
+## Per-Model
+- deepseek-ai/DeepSeek-Coder-1.3B-Instruct: served=29004, busy_time=16104.649635, util=0.1851
+- qwen/Qwen2.5-1.5B-Instruct: served=29003, busy_time=16175.103296, util=0.1859
+- qwen/Qwen2.5-3B-Instruct: served=29002, busy_time=16210.458755, util=0.1863

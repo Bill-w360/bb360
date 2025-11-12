@@ -1,0 +1,16 @@
+Unrecognized keys in `rope_scaling` for 'rope_type'='linear': {'type'}
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+[load] model=../Multiscale_llm_eval/_modelscope/deepseek-ai/DeepSeek-Coder-1.3B-Instruct device=cuda dtype=float16
+[data] loaded 29004 samples
+[eval] MCQ/BoolQ accuracy = 0.3100 (n=26073)
+[eval] GSM8K exact-match = 0.0212 (n=2931)
+[save] -> out/DeepSeek-Coder-1.3B-Instruct__batch_deepseek-ai_DeepSeek-Coder-1.3B-Instruct.jsonl
+[report] per dataset:
+  - boolq: acc=0.6088 n=4233
+  - gsm8k: acc=0.0212 n=2931
+  - hellaswag: acc=0.2553 n=16649
+  - mmlu: acc=0.2416 n=5191
+[report] per task_type:
+  - boolq: acc=0.6088 n=4233
+  - gsm8k: acc=0.0212 n=2931
+  - mcq: acc=0.2521 n=21840

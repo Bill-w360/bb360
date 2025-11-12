@@ -1,0 +1,27 @@
+{
+  "tasks_total": 87009,
+  "fairness_jain": 0.9999999992074569,
+  "queue_variance_end": 0.0,
+  "wait_p50": 0.0,
+  "wait_p90": 0.0,
+  "wait_p99": 0.05479041489888914,
+  "soj_p50": 0.3891569113038713,
+  "soj_p90": 1.293514780836631,
+  "soj_p99": 2.5862923089771357,
+  "per_model_served": {
+    "qwen/Qwen2.5-3B-Instruct": 29002,
+    "deepseek-ai/DeepSeek-Coder-1.3B-Instruct": 29004,
+    "qwen/Qwen2.5-1.5B-Instruct": 29003
+  },
+  "per_model_busy": {
+    "qwen/Qwen2.5-3B-Instruct": 16210.45875486033,
+    "deepseek-ai/DeepSeek-Coder-1.3B-Instruct": 16104.649635243266,
+    "qwen/Qwen2.5-1.5B-Instruct": 16175.103295661038
+  },
+  "per_model_util": {
+    "qwen/Qwen2.5-3B-Instruct": 0.18630780895243063,
+    "deepseek-ai/DeepSeek-Coder-1.3B-Instruct": 0.18509173817114377,
+    "qwen/Qwen2.5-1.5B-Instruct": 0.18590146646468625
+  },
+  "t_end": 87009.01398609274
+}

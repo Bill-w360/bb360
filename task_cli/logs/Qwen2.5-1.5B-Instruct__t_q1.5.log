@@ -1,0 +1,15 @@
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+[load] model=../Multiscale_llm_eval/_modelscope/qwen/Qwen2.5-1.5B-Instruct device=cuda dtype=float16
+[data] loaded 40 samples
+[eval] MCQ/BoolQ accuracy = 0.7333 (n=30)
+[eval] GSM8K exact-match = 0.2000 (n=10)
+[save] -> out/Qwen2.5-1.5B-Instruct__t_q1.5.jsonl
+[report] per dataset:
+  - boolq: acc=0.7000 n=10
+  - gsm8k: acc=0.2000 n=10
+  - hellaswag: acc=0.8000 n=10
+  - mmlu: acc=0.7000 n=10
+[report] per task_type:
+  - boolq: acc=0.7000 n=10
+  - gsm8k: acc=0.2000 n=10
+  - mcq: acc=0.7500 n=20

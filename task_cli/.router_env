@@ -1,0 +1,2 @@
+# 加载本项目包路径
+export PYTHONPATH="/mnt/Data/yangyongbiao/task_cli:${PYTHONPATH:-}"

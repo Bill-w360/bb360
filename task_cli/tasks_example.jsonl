@@ -1,0 +1,58 @@
+{
+    "id": "gsm8k-001",
+    "prompt": "Alice has 3 apples ...",
+    "meta": {
+        "domain": "math",
+        "difficulty": "easy",
+        "metrics": {
+            "metric": "acc",
+            "goal": "max"
+        }
+    }
+}
+{
+    "id": "boolq-007",
+    "prompt": "Question: Is ...? Passage: ...",
+    "meta": {
+        "domain": "reading",
+        "metrics": {
+            "metric": "acc",
+            "goal": "max"
+        }
+    }
+}
+{
+    "id": "mmlu-phy-12",
+    "prompt": "A ball is thrown ...",
+    "meta": {
+        "domain": "science",
+        "difficulty": "medium",
+        "metrics": {
+            "metric": "acc",
+            "goal": "max"
+        }
+    }
+}
+{
+    "id": "hs-004",
+    "prompt": "Context ... choose the most plausible ...",
+    "meta": {
+        "domain": "commonsense",
+        "metrics": {
+            "metric": "acc",
+            "goal": "max"
+        }
+    }
+}
+{
+    "id": "code-013",
+    "prompt": "Write a Python function ...",
+    "meta": {
+        "domain": "code",
+        "difficulty": "hard",
+        "metrics": {
+            "metric": "pass@1",
+            "goal": "max"
+        }
+    }
+}

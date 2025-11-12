@@ -1,0 +1,37 @@
+# 根目录特定路径
+/cache/
+/datasets_eval/
+/GPU_test.py
+/models/
+/Multiscale_llm_eval/_modelscope/
+/Multiscale_llm_eval/_modelscope_cache/
+/Multiscale_llm_eval/eval_results/
+/RouterDC/data/
+/RouterDC/datasets/
+/RouterDC/logs/
+/RouterDC/models/
+/T_C/data/
+/T_C/outputs/
+/task_cli/data/
+/task_cli/data_local_1/
+/task_cli/work/
+
+# 常见通用忽略（建议保留）
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# 大文件/权重（避免被 100MB 限制卡住）
+*.pt
+*.bin
+*.ckpt
+*.safetensors
+
+# 若任何层级都可能出现这些目录，可追加通配
+**/outputs/
+**/datasets/

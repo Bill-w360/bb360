@@ -1,0 +1,4 @@
+{
+  "math_reasoning": { "difficulty": 3, "domain": "math" },
+  "coding":         { "difficulty": 4, "domain": "coding" }
+}
